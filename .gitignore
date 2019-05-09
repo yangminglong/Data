@@ -1,0 +1,5 @@
+ipch
+/vtkbooltest/Debug
+/vtkbooltest/x64
+/vtkbooltest/.vs
+/vtkbooltest/*.db

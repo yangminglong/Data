@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A8C56C66-2216-450C-9CC5-516D74C69C3B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>vtkbooltest</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_SCL_SECURE_NO_WARNINGS;_CONSOLE;vtkRenderingCore_INCLUDE="G:/dev/VTK/VTK-8.1.2-build/x64/Examples/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingOpenGL2.h";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\projects\vtkbool\vtkbool-2.6;F:\projects\vtkbool\vtkbool-2.6\libs\vp;C:\Program Files\VTK\include;C:\Program Files\VTK\include\vtk-8.1</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>F:\projects\vtkbool\vtkbool-2.6\build\x64\Debug\vtkboold.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkInteractionStyle-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersExtraction-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersStatistics-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkImagingFourier-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkImagingCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkalglib-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkRenderingOpenGL2-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkglew-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkRenderingCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersSources-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersGeneral-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonComputationalGeometry-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonColor-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersGeometry-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonExecutionModel-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonDataModel-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonTransforms-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonMisc-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonMath-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonSystem-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkCommonCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtksys-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkIOGeometry-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkIOImage-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkRenderingVolume-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkInteractionWidgets-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkFiltersSMP-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Debug\vtkIOCore-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_SCL_SECURE_NO_WARNINGS;_CONSOLE;vtkRenderingCore_INCLUDE="G:/dev/VTK/VTK-8.1.2-build/x64/Examples/CMakeFiles/vtkRenderingCore_AUTOINIT_vtkInteractionStyle_vtkRenderingOpenGL2.h";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>F:\projects\vtkbool\vtkbool-2.6;F:\projects\vtkbool\vtkbool-2.6\libs\vp;C:\Program Files\VTK\include;C:\Program Files\VTK\include\vtk-8.1;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>F:\projects\vtkbool\vtkbool-2.6\build\x64\Release\vtkbool.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkInteractionStyle-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersExtraction-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersStatistics-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkImagingFourier-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkImagingCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkalglib-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkRenderingOpenGL2-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkglew-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkRenderingCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersSources-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersGeneral-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonComputationalGeometry-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonColor-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersGeometry-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonExecutionModel-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonDataModel-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonTransforms-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonMisc-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonMath-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonSystem-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkCommonCore-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtksys-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkIOGeometry-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkIOImage-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkRenderingVolume-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkInteractionWidgets-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkFiltersSMP-8.1.lib;G:\dev\VTK\VTK-8.1.2-build\x64\lib\Release\vtkIOCore-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="vtkbooltest.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
